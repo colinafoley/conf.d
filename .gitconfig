@@ -1,0 +1,6 @@
+[core]
+  excludesfile = ./.gitignore
+[user]
+	name = Colin A Foley
+[color]
+	ui = auto
