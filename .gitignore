@@ -14,3 +14,10 @@
 
 #drupal
 settings.php
+dbconfig.php
+dbconfig.php*
+sites/default/files
+sites/simpletest
+
+.sass-cache
+
