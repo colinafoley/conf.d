@@ -1,3 +1,5 @@
+syntax on
+
 set tabstop=2
 set expandtab
 set shiftwidth=2
@@ -19,6 +21,7 @@ set diffopt=vertical
 
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
+au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 highlight Folded ctermbg=black ctermfg=brown
 
