@@ -130,7 +130,13 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias up='cd ..'
-
+alias dcc='sudo drush cc all'
+alias xclipin='xclip -in -selection c'
+alias vsp='vim -O'
+alias gip=mygeoiplookup
+mygeoiplookup() {
+  curl "ipinfo.io/$1"
+}
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
