@@ -184,3 +184,7 @@ alias gammadown='xrandr --output DP2-1 --brightness 1; xrandr --output DP2-1 --g
 
 alias gammalapup='xrandr --output eDP1 --brightness 2; xrandr --output eDP1 --gamma 2:2:2'
 alias gammalapdown='xrandr --output eDP1 --brightness 1; xrandr --output eDP1 --gamma 1:1:1'
+
+b64decode() {
+  echo $1 | base64 -d
+}
