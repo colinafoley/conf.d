@@ -1,0 +1,5 @@
+keycode 100 = Alt_R
+clear mod1
+add mod1 = Alt_L Meta_L
+clear mod4
+add mod4 = Super_L Super_R Alt_R
