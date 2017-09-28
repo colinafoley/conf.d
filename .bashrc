@@ -61,10 +61,20 @@ prompt_jobs() {
 
 
 COLOR_DIM_WHITE='\[\e[2;37m\]'
+ECOLOR_DIM_WHITE='\e[2;37m'
 COLOR_DIM_GREEN='\[\e[2;32m\]'
+COLOR_GREEN='\[\e[1;32m\]'
+ECOLOR_GREEN='\e[1;32m'
+COLOR_MAGENTA='\[\e[1;35m\]'
+ECOLOR_MAGENTA='\e[1;35m'
 COLOR_BLUE='\[\e[1;34m\]'
+ECOLOR_BLUE='\e[1;34m'
 COLOR_RED='\[\e[1;31m\]'
+ECOLOR_RED='\e[1;31m'
+COLOR_YELLOW='\[\e[1;33m\]'
+ECOLOR_YELLOW='\e[1;33m'
 COLOR_RESET='\[\e[0m\]'
+ECOLOR_RESET='\e[0m'
 prompt_on() {
   # set variable identifying the chroot you work in (used in the prompt below)
   if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
@@ -93,7 +103,10 @@ prompt_on() {
   fi
 
   if [ "$color_prompt" = yes ]; then
-      PS1='${debian_chroot:+($debian_chroot)}'${COLOR_DIM_GREEN}'\u@\h'${COLOR_RESET}':'${COLOR_BLUE}'\w'${COLOR_RESET}
+      PS1='${debian_chroot:+($debian_chroot)}'${COLOR_GREEN}'\u@\h'${COLOR_RESET}':'${COLOR_BLUE}'\w'${COLOR_RESET}
+      echo -e ${ECOLOR_DIM_WHITE}
+      figlet -f standard "KINGDOM"
+      echo -e ${ECOLOR_RESET}
   else
       PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w'
   fi
