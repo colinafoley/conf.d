@@ -178,3 +178,9 @@ export EDITOR=vim
 
 #PS1='\[\e[31m\]\u\[\e[0m\]'
 export PATH=$PATH:~/bin
+
+alias gammaup='xrandr --output DP2-1 --brightness 2; xrandr --output DP2-1 --gamma 2:2:2'
+alias gammadown='xrandr --output DP2-1 --brightness 1; xrandr --output DP2-1 --gamma 1:1:1'
+
+alias gammalapup='xrandr --output eDP1 --brightness 2; xrandr --output eDP1 --gamma 2:2:2'
+alias gammalapdown='xrandr --output eDP1 --brightness 1; xrandr --output eDP1 --gamma 1:1:1'
